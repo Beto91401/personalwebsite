@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heriberto Lopez - Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/H.png" type="image/png" />
+
+
+    <style>
+        /* Image container */
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%; 
+            height: 100%; 
+            z-index: -1; /* Ensures the image stays behind other content */
+            background-image: url("images/greenackgroundwebp.webp"); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none; 
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="background-image"></div>   
+<!-- Header -->
+<div id="header">
+
+    <div class="top">
+
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="images/profilepic.jpg" alt="" /></span>
+            <h1 id="title">
+                <span class="first-name">Heriberto</span><br />
+                <span class="last-name">Lopez</span>
+            </h1>
+            <p>Software Engineer</p>
+        </div>
+        
+
+        <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#top" id="top-link"><span class="icon solid fa-home">Take me home</span></a></li>
+                    <hr>
+                    <li><a href="#span" class="scrolly"><span class="icon solid fa-microphone">Ticket System</span></a></li>
+                    <li><a href="#swamp" class="scrolly"><span class="icon solid fa-bomb">Minesweeper</span></a></li>
+                    <li><a href="#jaws" class="scrolly"><span class="icon solid fa-tooth">PawMatch</span></a></li>
+                    <li><a href="#compiler" class="scrolly"><span class="icon solid fa-code">Toxic Terminator</span></a></li>
+                    <li><a href="#tictactoe" class="scrolly"><span class="icon solid fa-gamepad">AI Tic Tac Toe</span></a></li>
+                    <li><a href="#parkinson" class="scrolly"><span class="icon solid fa-heartbeat">Parkinson's Locator</span></a></li>
+                    <li><a href="#sudoku" class="scrolly"><span class="icon solid fa-th">Sudoku</span></a></li>
+                </ul>
+            </nav>
+
+    </div>
+
+    <div class="bottom">
+
+        <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#contact" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+
+    </div>
+
+</div>
+
+    
+
+
+    <!-- Content Starts Here -->
+    <div class="main-content">
+        <section id="span" class="container spacing-large">
+            <header>
+                <h2 id="special-header">Ticket System</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">IT Help Desk System</h2>
+                    <a href="span.html" class="image fit">
+                        <img src="images/Ticket-User.png" alt="" class="project-image" />
+                    </a>
+                    <h5 style="text-align: center;"> (click on the image to learn more) </h5>
+                   
+                    <li> Language: JavaScript</li>
+
+                        <li>  Libraries/Frameworks: React, Node.js, Expres, MongoDB, Tailwind CSS, Materiual-UI </li>
+                        
+                            <li> Building Environment: Docker, Visual Studio Code</li>
+                            <li>Github Code: <a href="https://github.com/MaksimArtemev/Ticket-System">Visit Repository</a></li>
+                </header>
+            </article>
+        </section>
+
+
+
+        <section id="swamp" class="container spacing-large">
+            <header>
+                <h2 id="special-header">Minesweeper</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">The Classic Beloved Minesweeper Game</h2>
+                    <!-- <a href="#" class="image fit"> -->
+                    <a class="image fit">
+                        <img src="images/minesweeper.png" alt="" class="project-image" />
+                    </a>
+                    <!-- <h5 style="text-align: center;"> (click on the image to learn more) </h5> -->
+                    <br>
+                    <h4>Reimagined Minesweeper with a Gator Nation twist using the SFML library</h4>
+                    
+                    <ul>
+                        <li>Language: C++</li>
+                        <li>Libraries: SFML, fstream, random</li>
+                        <li>Building Environment: CLion</li>
+                        <li>Github Code: Available Upon Request</li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+
+
+
+        <section id="jaws" class="container spacing-large">
+            <header>
+                <h2 id="special-header">PawMatch</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Adoption And Breeding Platform</h2>
+                    <a class="image fit">
+                        <img src="images/PawMatchLogin.png" alt="" class="project-image" />
+                        <img src="images/Swiping.png" alt="Swiping Feature" class="project-image" />
+                    </a>
+                    <!-- <h5 style="text-align: center;"> (click on the image to learn more) </h5> -->
+                    <br>
+                    <h4>Designed for pet adoption and breeding. It provides features like user authentication, real-time messaging, user profile management, and dynamic content loading, all within a responsive and user-friendly interface. The platform connects breeders and potential adopters, making it easier to find and adopt pets.</h4>
+                   
+                    <ul>
+                        <li>Language: JavaScript</li>
+                        <li>Libraries/Frameworks: React, Node.js, Express, MongoDB, Bottstrap, Swiper.js</li>
+                        <li>Building Environment: Visual Studio code</li>
+                        <li>Github Code: <a href="https://github.com/Beto91401/PawMatch">Visit Repository</a></li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+
+
+
+        <section id="compiler" class="container spacing-large">
+            <header>
+                <h2 id="special-header">Toxic Terminator</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Measures Toxcity Levels</h2>
+                    <a class="image fit">
+                        <img src="images/ToxicHomepage.png" alt="" class="project-image" />
+                        <img src="images/toxic.png" alt="Game Comparison" class="project-image" />
+                    </a>
+                    <!-- <h5 style="text-align: center;"> (click on the image to learn more) </h5> -->
+                    <br>
+                    <h4>This is designed to quantify toxicity in online video games by efficiently scanning chat messages for blacklisted phrases. It features a C++ backend that communicates with a Python frontend built with Flask, allowing real-time analysis of user-inputted messages and large datasets. The project offers insights into the overall toxicity of different games.</h4>
+                   
+                    <ul>
+                        <li>Language: Python, C++, JavaScript</li>
+                        <li>Libraries: Flask, Bootstrap, JQuery, Cloudmesh</li>
+                        <li>Building Environment: Visual Studio Code, Docker</li>
+                        <li>Github Code: <a href="https://github.com/Beto91401/ToxicTerminator">Visit Repository</a></li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+
+
+
+
+        <section id="tictactoe" class="container spacing-large">
+            <header>
+                <h2 id="special-header">AI Tic-Tac-Toe</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Tic-Tac-Toe AI: Classifier and Regressor Evaluation</h2>
+                    <a href="https://andychen482.github.io/AITicTacToe/" class="image fit">
+                        <img src="images/tictactoe.png" alt="" class="project-image" />
+                    </a>
+                    <h5 style="text-align: center;"> (click on the image to play) </h5> 
+                    <br>
+                    <h4>Developed a Jupyter notebook to evaluate classifiers and regressors, using tic-tac-toe datasets. The MLP classifier achieved 94.9% accuracy, excelling in predicting optimal moves for player 'O'</h4>
+                    <ul>
+                        <li>Language: Python</li>
+                        <li>Libraries: sklearn, numpy, joblib</li>
+                        <li>Building Environment: Jupyter</li>
+                        <li>Github: Code Available Upon Request</li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+
+
+
+
+        <section id="parkinson" class="container spacing-large">
+            <header>
+                <h2 id="special-header">Parkinson's Locator</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Early Parkinson's Detection via Acoustic Analysis</h2>
+                    <a href="https://beto91401.github.io/Parkinson-Locator/" class="image fit">
+                        <img src="images/parkinson.png" alt="" class="project-image" />
+                    </a>
+                    <h5 style="text-align: center;"> (click on the image to view) </h5>
+                    <br>
+                    <h4>Built a machine learning model for early Parkinson's detection through vocal analysis. After data preprocessing and exploratory analysis, we tested models like KNN and SVM. The final model, evaluated on key metrics, was deployed in a web app for speech-based risk assessment.</h4>
+                    <ul>
+                        <li>Language: Python</li> 
+                        <li>Libraries: numpy, pandas, seaborn, matplotlib, sklearn</li>
+                        <li>Building Environment: Jupyter</li>
+                        <li>Github: <a href="https://github.com/mvorot/ParkinsonLocator">Visit Repository</a></li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+
+
+
+        <section id="sudoku" class="container spacing-large">
+            <header>
+                <h2 id="special-header">Sudoku</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Sudoku Solver: Python-Powered Puzzle Challenge</h2>
+                    <a class="image fit">
+                        <img src="images/sudoku1.png" alt="" class="project-image" />
+                    </a>
+                    <!-- <h5 style="text-align: center;"> (click on the image to learn more) </h5> -->
+                    <br>
+                    <h4>Developed a Sudoku game using Python and Pygame, featuring an interactive UI and customizable difficulty levels.</h4>
+                    <ul>
+                        <li>Language: Python</li>
+                        <li>Libraries: pygame</li>
+                        <li>Building Environment: PyCharm</li>
+                        <li>Github: Code Available Upon Request</li>
+                    </ul>
+                </header>
+            </article>
+        </section>
+
+
+
+        
+    
+
+
+
+
+
+
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
