@@ -88,7 +88,7 @@ input, select, textarea {
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #36454F;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2032,7 +2032,7 @@ input, select, textarea {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
-			background:#014e65;
+			background:#00a86b;
 		}
 
 		table thead {
@@ -2057,7 +2057,7 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #014e65;
+		background-color: #00a86b;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -2075,7 +2075,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #027da2;
+			background-color: #29AB87;
 		}
 
 		input[type="button"]:active,
@@ -2303,7 +2303,7 @@ input, select, textarea {
 				}
 
 					#nav ul li a.active span:before {
-						color: #027da2;
+						color: #29AB87;
 					}
 
 /* Footer */
@@ -2602,7 +2602,7 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
+				background: #36454F url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -2843,7 +2843,7 @@ input, select, textarea {
 
 .side-header .nav-tabs li a:hover,
 .side-header .nav-tabs li a.active {
-    background-color: #014e65;
+    background-color: #00a86b;
 }
 
 
