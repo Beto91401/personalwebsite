@@ -3364,7 +3364,7 @@ body {
 }
 
 #footer {
-    width: 56.5%; /* Makes it take up the entire width of the screen */
+    width: 100%; /* Makes it take up the entire width of the screen */
     max-width: 1200px; /* Limits the width to 1200px for large screens */
     height: auto; /* Adjusts the height automatically based on content */
     padding: 15px; /* Internal space for better spacing */
@@ -3377,7 +3377,7 @@ body {
 .container {
     margin: 0 auto;
     width: 100%;
-    padding: 20; /* Ensure no padding adds extra space */
+    
 }
 body, html {
     margin: 0;
@@ -3387,8 +3387,7 @@ body, html {
 }
 
 .main-content {
-    margin-right: 350px ; /* Reset the left margin */
-    padding: 20px; /* Ensure the padding is consistent */
+    padding: 21%; /* Ensure the padding is consistent */
 }
 
 
