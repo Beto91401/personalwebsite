@@ -37,19 +37,18 @@
             <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
             <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
-        <ul class="nav-center">
+
+        <!-- Hamburger Icon (visible only on mobile screens) -->
+        <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
+
+        <ul class="nav-center nav-menu">
             <li><a href="index.html#top" id="home-link">Take me home</a></li>
             <li><a href="experience.html" id="experience-link">Work Experience</a></li>
-            <li><a href="#span" id="ticket-link">Ticket System</a></li>
-            <li><a href="#swamp" id="minesweeper-link">Minesweeper</a></li>
-            <li><a href="#jaws" id="pawmatch-link">PawMatch</a></li>
-            <li><a href="#compiler" id="toxic-link">Toxic Terminator</a></li>
-            <li><a href="#tictactoe" id="tictactoe-link">AI Tic Tac Toe</a></li>
-            <li><a href="#parkinson" id="parkinsons-link">Parkinson's Locator</a></li>
-            <li><a href="#sudoku" id="sudoku-link">Sudoku</a></li>
+ 
         </ul>
     </nav>
 </header>
+
 
 
     </div>
@@ -261,5 +260,11 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script>
+    function toggleMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        navMenu.classList.toggle("active");
+    }
+</script>
 </body>
 </html>

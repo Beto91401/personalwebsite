@@ -218,9 +218,10 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
-		max-width: 100%;
+		max-width: 50%;
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 1px;
+		
 	}
 	
 
@@ -229,11 +230,11 @@ input, select, textarea {
 	@media screen and (min-width: 961px) {
 
 		.container {
-			width: 2000px;
+			width: 100%;
 
 		}
 		body .main-content {
-			margin-left: 375px; 
+			/*It was right here */
 			padding: 20px;
 		}
 
@@ -249,11 +250,11 @@ input, select, textarea {
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
 			.container {
-				width: 1200px;
+				width: 100%;
 
 			}
 			body .main-content {
-				margin-left: 350px; 
+				margin-left: auto; 
 				padding: 20px;
 			}
 
@@ -272,7 +273,7 @@ input, select, textarea {
 				width: 960px;
 			}
 			.main-content {
-				margin-left: 350px; 
+				
 				padding: 20px;
 			}
 
@@ -284,19 +285,21 @@ input, select, textarea {
 				width: 100%;
 			}
 			.main-content {
-				margin-left: 350px; 
+				
 				padding: 20px;
 			}
 
 		}
 
 		@media screen and (max-width: 960px) {
-
 			.container {
 				width: 100%;
+				padding: 0 1em;
+				min-width: 500px; /* Set a minimum width */
 			}
-
 		}
+		
+		
 
 		@media screen and (max-width: 736px) {
 
@@ -2270,7 +2273,7 @@ input, select, textarea {
 
 			#nav ul li a {
 				display: block;
-				padding: 0.5em 1.5em 0.5em 1.5em;
+				 padding: 0.5em 0.5em 0.5em 0.5em; /* Adjust padding */
 				color: rgba(255, 255, 255, 0.5);
 				text-decoration: none;
 				outline: 0;
@@ -2623,7 +2626,7 @@ input, select, textarea {
 			}
 
 			#nav ul li a {
-				padding: 0.5em 1.25em 0.5em 1.25em;
+				padding: 0.5em 0.5em 0.5em 0.5em; /* Adjust padding */
 			}
 
 			#headerToggle {
@@ -2670,7 +2673,7 @@ input, select, textarea {
 
 					#headerToggle .toggle:before {
 						text-decoration: none;
-						content: '\f0c9';
+						
 						color: #fff;
 						font-size: 18px;
 						background: rgba(128, 136, 144, 0.5);
@@ -2858,7 +2861,7 @@ input, select, textarea {
     } /* Closing brace added here */
 
     .main-content {
-        margin-left: 300px; /* Remove the left margin */
+        
         padding: 15px; /* Slightly reduce padding */
     }
 }
@@ -3313,11 +3316,7 @@ hr {
     font-size: 16px;
 }
 
-#navbar #portfolio-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff; /* Portfolio title color */
-}
+
 
 #navbar a:hover {
     color: #29AB87; /* Green color when hovered */
@@ -3335,7 +3334,7 @@ body {
 }
 
 #main {
-    max-width: 1200px; /* Set this to the maximum width you want your content to be */
+    max-width: 1240px; /* Set this to the maximum width you want your content to be */
     margin: 0 auto; /* This centers the #main div horizontally */
     padding: 0 20px; /* Add some padding so the content doesn't touch the edges */
 }
@@ -3390,6 +3389,10 @@ body, html {
     padding: 21%; /* Ensure the padding is consistent */
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -3407,3 +3410,123 @@ body, html {
         width: 100%;
     }
 }
+@media (max-width: 600px) {
+    .navbar {
+        font-size: 14px; /* Make text smaller on small screens */
+        padding: 10px;
+    }
+    .content {
+        width: 100%; /* Make content take the full width */
+    }
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* General navbar styles */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#navbar .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar .nav-menu li {
+    margin-right: 20px;
+}
+
+#navbar .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+/* Mobile and minimized screen styles */
+@media (max-width: 960px) {
+    /* Show the hamburger icon */
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Hide the regular nav menu and show only on click */
+    #navbar .nav-menu {
+        display: none;
+        
+        background-color: #333;
+        position: absolute;
+        right: 0;
+        
+        width: 100%;
+        z-index: 999;
+    }
+
+    /* Show menu when the 'active' class is added */
+    #navbar .nav-menu.active {
+        display: flex;
+    }
+
+    #navbar .nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Hover effect */
+#navbar a:hover {
+    color: #29AB87; /* Green color on hover */
+}
+
+/* Hide the nav menu by default on mobile */
+.nav-menu {
+    display: none; /* Hidden by default */
+}
+
+/* Display nav menu when hamburger is clicked (on mobile) */
+.nav-menu.active {
+    display: flex; /* Show when active */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Make sure the hamburger icon is displayed on smaller screens */
+.hamburger-icon {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Hide the hamburger icon on larger screens */
+@media (min-width: 768px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    /* Ensure the menu is always visible on larger screens */
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

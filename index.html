@@ -24,14 +24,18 @@
             <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
             <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
-        <ul class="nav-center">
+
+        <!-- Hamburger Icon (visible on mobile) -->
+        <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
+
+        <ul class="nav-center nav-menu">
             <li><a href="#about" id="about-link">About Me</a></li>
             <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
-           
             <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
     </nav>
 </header>
+
 
 
 		<!-- Main -->
@@ -194,6 +198,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				function toggleMenu() {
+					const navMenu = document.querySelector(".nav-menu");
+					navMenu.classList.toggle("active");
+				}
+			</script>
 
 	</body>
 </html>
