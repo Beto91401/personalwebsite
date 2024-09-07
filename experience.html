@@ -16,7 +16,7 @@
             width: 100%; 
             height: 100%; 
             z-index: -1; /* Ensures the image stays behind other content */
-            background-image: url("images/greeen.jpg"); 
+            background-image: url("images/orange.jpg"); 
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -28,27 +28,32 @@
 </head>
 <body>
     <div id="background-image"></div>   
+
     <header>
         <nav id="navbar">
-            <ul class="nav-left">
-                <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            
-            <!-- Hamburger Icon (visible on mobile) -->
-        <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
-
-            <ul class="nav-center">
-                <li><a href="index.html" id="home-link">Take me home</a></li>
-             
-                <li><a href="#skills" id="skills-link">Skills</a></li>
-                <li><a href="#education" id="education-link">Education</a></li>
-                <li><a href="#certificates" id="certificates-link">Certificates</a></li>
-                <li><a href="projects.html" id="projects-link">Projects</a></li>
-            </ul>
+            <!-- Burger Button (Visible on Mobile) -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+    
+            <div class="nav-wrapper">
+                <ul class="nav-left">
+                    <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+    
+                <ul class="nav-center nav-menu">
+                    <li><a href="#skills" id="skills-link">Skills</a></li>
+                    <li><a href="#education" id="education-link">Education</a></li>
+                    <li><a href="#certificates" id="certificates-link">Certificates</a></li>
+                    <li><a href="projects.html" id="projects-link">Projects</a></li>
+                    <li><a href="index.html" id="home-link">Take me home</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    
     
 
     
@@ -242,7 +247,7 @@
 <script src="assets/js/main.js"></script>
 <script>
     function toggleMenu() {
-        const navMenu = document.querySelector(".nav-menu");
+        const navMenu = document.querySelector(".nav-wrapper");
         navMenu.classList.toggle("active");
     }
 </script>

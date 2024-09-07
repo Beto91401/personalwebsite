@@ -4,6 +4,9 @@
     <title>Heriberto Lopez - Projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="images/H.png" type="image/png" />
 
@@ -29,23 +32,27 @@
 </head>
 <body>
     <div id="background-image"></div>   
-<!-- Updated Navbar -->
+
 <header>
     <nav id="navbar">
-        <ul class="nav-left">
-            <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
+        <!-- Burger Button (Visible on Mobile) -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger Icon -->
+        </div>
 
-        <!-- Hamburger Icon (visible only on mobile screens) -->
-        <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-wrapper">
+            <ul class="nav-left">
+                <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
 
-        <ul class="nav-center nav-menu">
-            <li><a href="index.html#top" id="home-link">Take me home</a></li>
-            <li><a href="experience.html" id="experience-link">Work Experience</a></li>
- 
-        </ul>
+            <ul class="nav-center nav-menu">
+                <li><a href="images/HeribertoLopezResume.pdf" target="_blank">Resume</a></li>
+                <li><a href="index.html" id="home-link">Take me home</a></li>
+                <li><a href="experience.html" id="experience-link">Experience</a></li> <!-- New Experience link -->
+            </ul>
+        </div>
     </nav>
 </header>
 
@@ -72,7 +79,8 @@
                         <img src="images/Ticket-User.png" alt="" class="project-image" />
                     </a>
                     <h5 style="text-align: center;"> (click on the image to learn more) </h5>
-                   
+                    <br>
+                    <h4>Enables secure user authentication using JWT and bcrypt, and features role-based access control, asynchronous chat, and efficient ticket management. With RESTful APIs for backend communication, the system ensures seamless workflows</h4>
                     <li> Language: JavaScript</li>
 
                         <li>  Libraries/Frameworks: React, Node.js, Expres, MongoDB, Tailwind CSS, Materiual-UI </li>
@@ -145,15 +153,16 @@
             </header>
             <article class="item">
                 <header>
-                    <h2 class="project-title">Measures Toxcity Levels</h2>
-                    <a class="image fit">
+                    <h2 class="project-title">Measures Toxicity Levels</h2>
+                    <a href="https://toxicterminator.pythonanywhere.com/" target="_blank" class="image fit">
+                        <!-- Now the images are clickable -->
                         <img src="images/ToxicHomepage.png" alt="" class="project-image" />
                         <img src="images/toxic.png" alt="Game Comparison" class="project-image" />
                     </a>
-                    <!-- <h5 style="text-align: center;"> (click on the image to learn more) </h5> -->
+                    <h5 style="text-align: center;">Click on image to visit website</h5> <!-- New text -->
                     <br>
                     <h4>This is designed to quantify toxicity in online video games by efficiently scanning chat messages for blacklisted phrases. It features a C++ backend that communicates with a Python frontend built with Flask, allowing real-time analysis of user-inputted messages and large datasets. The project offers insights into the overall toxicity of different games.</h4>
-                   
+        
                     <ul>
                         <li>Language: Python, C++, JavaScript</li>
                         <li>Libraries: Flask, Bootstrap, JQuery, Cloudmesh</li>
@@ -163,8 +172,33 @@
                 </header>
             </article>
         </section>
+        
+        
 
 
+        
+        <section id="trafficvision" class="container spacing-large">
+            <header>
+                <h2 id="special-header">TrafficVision AI</h2>
+            </header>
+            <article class="item">
+                <header>
+                    <h2 class="project-title">Real Time AI Tracker</h2>
+                    <a href="https://vimeo.com/365798168/0ab3574022" class="image fit">
+                        <img src="images/traffic.png" alt="" class="project-image" />
+                    </a>
+                    <h5 style="text-align: center;"> (click on the image to watch a video about the project) </h5> 
+                    <br>
+                    <h4>This project focuses on developing AI-driven algorithms to improve pedestrian safety by identifying near-miss scenarios through traffic camera footage.</h4>
+                    <ul>
+                        <li>Language: Python</li>
+                        <li>Libraries: sklearn, numpy, joblib, matplotlib</li>
+                        <li>Building Environment: Docker, Darknet, Linux, LaTex</li>
+                        <li>Github: Code Available Upon Request</li>
+                    </ul>
+                </header>
+            </article>
+        </section>
 
 
         <section id="tictactoe" class="container spacing-large">
@@ -262,7 +296,7 @@
 <script src="assets/js/main.js"></script>
 <script>
     function toggleMenu() {
-        const navMenu = document.querySelector(".nav-menu");
+        const navMenu = document.querySelector(".nav-wrapper");
         navMenu.classList.toggle("active");
     }
 </script>

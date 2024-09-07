@@ -12,29 +12,55 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/H.png" type="image/png" />
 
+
+
+
+		<style>
+			/* Image container */
+			#background-image {
+				position: fixed;
+				top: 0;
+				right: 0;
+				width: 100%; 
+				height: 100%; 
+				z-index: -1; /* Ensures the image stays behind other content */
+				background-image: url("images/greeen.jpg"); 
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				pointer-events: none; 
+			}
+		</style>
+<div id="background-image"></div>   
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 <!-- Updated Navbar -->
-<header>
-    <nav id="navbar">
-        <ul class="nav-left">
-            <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
-            <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-        </ul>
+    <!-- Header -->
+    <header>
+        <nav id="navbar">
+            <!-- Burger Button (Visible on Mobile) -->
+            <div class="burger-menu" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
 
-        <!-- Hamburger Icon (visible on mobile) -->
-        <span class="hamburger-icon" onclick="toggleMenu()">&#9776;</span>
+            <div class="nav-wrapper">
+                <ul class="nav-left">
+                    <li><a href="https://www.linkedin.com/in/-heriberto-lopez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Beto91401" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="mailto:Lopezbeto305@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
 
-        <ul class="nav-center nav-menu">
-            <li><a href="#about" id="about-link">About Me</a></li>
-            <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
-            <li><a href="#contact" id="contact-link">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+                <ul class="nav-center nav-menu">
+                    <li><a href="images/HeribertoLopezResume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#about" id="about-link">About Me</a></li>
+                    <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 
 
@@ -63,7 +89,7 @@
 						</header>
 					
 						<div class="content" style="text-align: left; font-size: 18px;">
-							<p>Welcome to my page! 
+							<p>Explore my journey! 
 								<br>
 								I majored in Computer Science at the University of Florida with a pation for Software Engineering, Full-stack web development, and Machine Learning.
 								<br>
@@ -79,7 +105,7 @@
 					</div>
 
 					<footer>
-						<a href="experience.html" class="button scrolly">See my experience</a>
+						<a href="experience.html" class="button scrolly">See my experience!</a>
 					</footer>
 
 					
@@ -87,75 +113,87 @@
 
 
 				<!-- Projects -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Projects</h2>
-							</header>
-
-							<p>Turning Thoughts into Actions.</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="span.html" class="image fit"><img src="images/ticket-coupon.gif" alt="Ticket Project" /></a>
-										<header>
-											<h3 class="project-title">Ticket System</h3>
-											<h4>IT Help Desk System.</h4>
-										</header>
-									</article>
-	
-									<article class="item">
-										<a href="projects.html#parkinson" class="image fit"><img src="images/chat.gif" alt="Parkinson's Locator" /></a>
-										<header>
-											<h3 class="project-title">Parkinson's Locator</h3>
-											<h4>Machine learning model for early Parkinson's detection via vocal analysis.</h4>
-										</header>
-									</article>
-
-
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="projects.html#jaws" class="image fit"><img src="images/paw.gif" alt="jaws" /></a>
-										<header>
-											<h3 class="project-title">Paw Match</h3>
-											<h4>Adoption and Breeding platform.</h4>
-										</header>
-									</article>
-									<article class="item">
-										<a href="projects.html#compiler" class="image fit"><img src="images/controller.gif" alt="Sharks" /></a>
-										<header>
-											<h3 class="project-title">Toxic Terminator</h3>
-											<h4>Measures toxicity levels across games using advanced algorithms.</h4>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="projects.html#swamp" class="image fit"><img src="images/minesweeper.gif" alt="Minesweeper" /></a>
-										<header>
-											<h3 class="project-title">Minesweeper</h3>
-											<h4>The classic 90's game Minesweeper.</h4>
-										</header>
-									</article>
-									<article class="item">
-										<a href="projects.html#sudoku" class="image fit"><img src="images/sudoku.gif" alt="Sudoku" /></a>
-										<header>
-											<h3 class="project-title">Sudoku</h3>
-											<h4>A slick classic game.</h4>
-										</header>
-									</article>
-								</div>
+				<section id="portfolio" class="two">
+					<div class="container">
+				
+						<header>
+							<h2>Projects</h2>
+						</header>
+				
+						<p>Turning Thoughts into Actions.</p>
+				
+						<div class="row">
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<a href="span.html" class="image fit"><img src="images/ticket-coupon.gif" alt="Ticket Project" /></a>
+									<header>
+										<h3 class="project-title">Ticket System</h3>
+										<h4>IT Help Desk System.</h4>
+									</header>
+								</article>
+				
+								<article class="item">
+									<a href="projects.html#parkinson" class="image fit"><img src="images/chat.gif" alt="Parkinson's Locator" /></a>
+									<header>
+										<h3 class="project-title">Parkinson's Locator</h3>
+										<h4>Machine learning model for early Parkinson's detection via vocal analysis.</h4>
+									</header>
+								</article>
 							</div>
-
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<a href="projects.html#jaws" class="image fit"><img src="images/paw.gif" alt="jaws" /></a>
+									<header>
+										<h3 class="project-title">Paw Match</h3>
+										<h4>Adoption and Breeding platform.</h4>
+									</header>
+								</article>
+				
+								<article class="item">
+									<a href="projects.html#compiler" class="image fit"><img src="images/controller.gif" alt="Sharks" /></a>
+									<header>
+										<h3 class="project-title">Toxic Terminator</h3>
+										<h4>Measures toxicity levels across games using advanced algorithms.</h4>
+									</header>
+								</article>
+				
+								<!-- Centered TrafficVision AI Project under Toxic Terminator -->
+								<article class="item">
+									<a href="projects.html#trafficvision" class="image fit"><img src="images/car.gif" alt="TrafficVision AI" /></a>
+									<header>
+										<h3 class="project-title">TrafficVision AI</h3>
+										<h4>Focused on developing AI-driven algorithms to improve pedestrian safety by identifying near-miss scenarios through traffic camera footage.</h4>
+									</header>
+								</article>
+							</div>
+							
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<a href="projects.html#swamp" class="image fit"><img src="images/minesweeper.gif" alt="Minesweeper" /></a>
+									<header>
+										<h3 class="project-title">Minesweeper</h3>
+										<h4>The classic 90's game Minesweeper.</h4>
+									</header>
+								</article>
+				
+								<article class="item">
+									<a href="projects.html#sudoku" class="image fit"><img src="images/sudoku.gif" alt="Sudoku" /></a>
+									<header>
+										<h3 class="project-title">Sudoku</h3>
+										<h4>A slick classic game.</h4>
+									</header>
+								</article>
+							</div>
 						</div>
-
-						<footer>
-							<a href="projects.html" class="button scrolly">See All Cool Projects</a>
-						</footer>
-					</section>
+				
+					</div>
+				
+					<footer>
+						<a href="projects.html" class="button scrolly">Explore my work!</a>
+					</footer>
+				</section>
+				
 
 				<!-- Contact -->
 					<section id="contact" class="four">
@@ -200,7 +238,7 @@
 			<script src="assets/js/main.js"></script>
 			<script>
 				function toggleMenu() {
-					const navMenu = document.querySelector(".nav-menu");
+					const navMenu = document.querySelector(".nav-wrapper");
 					navMenu.classList.toggle("active");
 				}
 			</script>
