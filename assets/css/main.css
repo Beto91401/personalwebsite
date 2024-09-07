@@ -3910,3 +3910,8 @@ body, html {
     padding: 0;
     margin: 0;
 }
+ul {
+    text-align: left; /* Aligns the list items to the left */
+    margin-left: 0; /* Optional: Ensure no extra margins */
+    padding-left: 0; /* Optional: Ensure no extra padding */
+}
