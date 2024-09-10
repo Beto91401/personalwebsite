@@ -3021,7 +3021,9 @@ input, select, textarea {
     background-image: url('icons/css.png');
 }
 
-
+.bullet-javascript {
+    background-image: url('icons/javascript.png');
+}
 
 
 .bullet-postman {
