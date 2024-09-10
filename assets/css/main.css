@@ -3130,7 +3130,7 @@ input, select, textarea {
 .bullet-javaScript {
 	width: 150px !important; 
     height: 150px !important; 
-    background-image: url('icons/javaScript.png');
+    background-image: url('icons/javascript.png');
 }
 
 .bullet-jwt {
