@@ -3148,6 +3148,11 @@ input, select, textarea {
 
 
 
+.bullet-java {
+	width: 150px !important; 
+    height: 150px !important; 
+    background-image: url('icons/java.png');
+}
 
 
 
